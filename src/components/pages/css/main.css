@@ -1,0 +1,33 @@
+/* adjusment */
+.main-container {
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+/* //-----------table----------- */
+.table-container {
+    background-color: blue;
+    display: block;
+}
+
+.employee-table,
+.worklist-table {
+    display: inline-block;
+    margin: 12px 12px 12px 170px;
+    width: 25em;
+    background-color: rgb(70, 70, 61);
+    border-radius: 10px;
+}
+
+.table-container th,
+td {
+    background-color: white;
+    /* border: 1px solid black; */
+    border: none;
+    border-radius: 2px;
+    width: 24em;
+    padding: auto;
+    text-align: center;
+
+}

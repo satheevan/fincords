@@ -1,0 +1,15 @@
+.table-container {
+    display: inline-block;
+}
+
+.col,
+.colvalue {
+    width: 100%;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+}
+
+.colvalue {
+    border-bottom: 1px solid black;
+}

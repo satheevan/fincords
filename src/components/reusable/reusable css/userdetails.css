@@ -1,0 +1,23 @@
+.user-container {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+}
+
+.userlist-container {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 80%;
+    background-color: blue;
+    text-decoration-style: solid;
+
+
+}
+
+.userlist {
+    border: 1px solid rgb(189, 161, 161);
+    text-decoration-style: none;
+
+    border-radius: 25%;
+}

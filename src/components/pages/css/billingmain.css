@@ -1,0 +1,15 @@
+.main-head-container {
+    display: inline-block;
+}
+
+.heading-fincords {
+    display: inline-block;
+
+}
+
+.menuicons {
+    float: left;
+    height: 30px;
+    padding: 8px;
+    cursor: pointer;
+}

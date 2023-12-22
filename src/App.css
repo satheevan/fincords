@@ -1,0 +1,22 @@
+/* Mobile view */
+.App {
+  padding: 0;
+  background-color: rgb(211, 138, 138);
+  max-width: 320px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+:root {
+  --primary-color: #e0e0e0;
+  --secondary-color: #ff5d5d;
+
+}
+
+/* global */
+
+.icons {
+  height: 30px;
+  width: 30px;
+
+}
