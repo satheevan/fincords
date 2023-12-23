@@ -1,7 +1,13 @@
 import React from "react";
-import { BrowserRouter, Router, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 const RouterComponant = () => {
+
+<BrowserRouter>
+    <Routes>
+        <Route path=""></Route>
+    </Routes>
+</BrowserRouter>
 
 }
