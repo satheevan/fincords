@@ -7,14 +7,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
+/*---------New----------*/
 h1,
 p {
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --primary-color: red;
+
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
