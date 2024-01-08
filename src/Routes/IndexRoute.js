@@ -6,6 +6,7 @@ import Routing from "./Route.js";
 import ALPHome from "../pages/ALP/ALPHome/ALPHome.jsx";
 import Billcords from "../pages/ALP/Billcords/Billcords.jsx";
 import BLPHome from "../pages/BLP/BLPHome/BLPHome.jsx";
+import Report from "../components/ALComponents/Billcords/Report.jsx";
 //--Before Login
 // import Login from "../pages/BLP/Login/Login.jsx";
 
@@ -20,6 +21,7 @@ const RouterComponent = () => {
                 <Route path="/" element={<PrivateRoutes />}>
                     <Route index path='/' element={<ALPHome />} />
                     <Route path={Routing.path.Billcords} element={<Billcords />} />
+                    <Route path='/report' element={<Report />} />
                     <Route path='/newbilling' element={<Billcords />} />
                     <Route path="/*" element={<Navigate to={"/"} />} />
                 </Route>

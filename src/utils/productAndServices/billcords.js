@@ -1,6 +1,6 @@
 
 
-export const billcords ={
+export const billcordsDetails ={
     companyInfo: {
         comapanyLogo: "Logo",
         comapanyName: "client Company",

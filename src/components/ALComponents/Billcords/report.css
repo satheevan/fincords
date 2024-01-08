@@ -1,0 +1,11 @@
+
+.vehicle-info {
+    margin: 1rem 0 1rem 1rem;
+    border-right: 1px solid #e2e2e2;
+}
+.motor-card .col:last-child .vehicle-info {
+    border-right: none;
+}
+.vehicle-info .label {
+    display: block;
+}

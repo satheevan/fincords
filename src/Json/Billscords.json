@@ -28,7 +28,7 @@
                 "id": 4,
                 "title": "Report",
                 "alais": "Billing Report",
-                "path": "/billingreport"
+                "path": "/report"
             }
         ],
         "itemsList": [

@@ -1,0 +1,9 @@
+:root{
+    --bgcolor-primary:var(--primary-color);
+    --bgcolor-secondary:var(--secondary-color);
+}
+
+.footer-container{
+    background-color:var(--bgcolor-secondary);
+    min-height: 250px;
+}

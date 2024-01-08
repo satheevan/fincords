@@ -18,7 +18,8 @@ p {
 }
 
 :root {
-  --primary-color: red;
+  --primary-color: #e0e0e0;
+  --secondary-color:#2222ff;
 
 }
 

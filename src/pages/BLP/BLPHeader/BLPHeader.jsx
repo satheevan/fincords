@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./header.css";
 const BLPHeader = () => {
     return (
         <>
-            <div>Header Before Login page</div>
+            <div className="header-container">Header page</div>
         </>
     )
 }

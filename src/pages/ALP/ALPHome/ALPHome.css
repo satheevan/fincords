@@ -1,7 +1,12 @@
 :root {
-    --bg-color: var(--primary-color);
+    --bg-color: var(--seconday-color);
 }
+.icons-header-container{
+    display: block;
+    margin: 0 auto;
+    background-color: red;
 
+}
 .icons-container {
     background-color: var(--bg-color);
     display: inline-block;
