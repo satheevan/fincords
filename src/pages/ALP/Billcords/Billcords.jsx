@@ -1,6 +1,8 @@
 import React from 'react';
 import Billingdata from '../../../Json/Billscords.json';
 import { Link } from 'react-router-dom';
+import CustomButton from '../../../components/shared/customButton';
+import './billcords.css';
 
 
 const Billcords = () => {
@@ -19,6 +21,7 @@ const Billcords = () => {
                 ))
                 }
             </nav>
+            <CustomButton title="status" classNameBtn="billing-statusbtn" onClickHandler={()=>alert("new Page Opening" )}containerClassName="container-billing-statusbtn"/>
 
 
 
