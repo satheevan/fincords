@@ -1,0 +1,14 @@
+@import url('../../asset/global.css');
+
+:root {
+    --bgcolor-primary: var(--primary-color);
+    --bgcolor-secondary: var(--secondary-color);
+    --height: var(--height);
+
+}
+
+
+.header-container {
+    background-color: var(--bgcolor-secondary);
+    height: 50px;
+}
