@@ -1,6 +1,5 @@
 
 
-
 /* Button container */
 .container-billing-statusbtn{
     display: inline-block;
@@ -10,4 +9,17 @@
 }
 .billing-statusbtn{
     background-color:#e0e0e0;
+}
+.custon-billing-btn{
+    background-color:var(--billcords-secondayColor) ;
+    color:var(--content-color);
+    font-size: 32px;
+}
+.billing-voucher-card{
+    display: inline-block;
+}
+.btn-admin-logs,.btn-users-logs{
+    background-color:var(--billcords-secondayColor) ;
+    color:var(--content-color);
+    font-size: 12px;
 }

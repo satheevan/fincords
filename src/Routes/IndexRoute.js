@@ -8,6 +8,7 @@ import Routing from "./Route.js";
 import Billcords from "../pages/Home/Billcords/index.jsx"
 import Home from '../pages/Home/index.js'
 import Login from "../pages/Login/index.js";
+import InventoryManagement from "../pages/Home/Inventory/index.js";
 //--Before Login
 // import Login from "../pages/BLP/Login/Login.jsx";
 
@@ -22,7 +23,7 @@ const RouterComponent = () => {
                 <Route path="/" element={<PrivateRoutes />}>
                     <Route index path='/' element={<Home />} />
                     <Route path={Routing.path.Billcords} element={<Billcords />} />
-                    <Route path='/newbilling' element={<Billcords />} />
+                    <Route path='/inventory' element={<InventoryManagement />} />
                     <Route path="/*" element={<Navigate to={"/"} />} />
                 </Route>
                 <Route
