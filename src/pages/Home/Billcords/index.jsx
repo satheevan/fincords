@@ -1,7 +1,7 @@
 import React from 'react';
 import Billingdata from '../../../Json/Billscords.json';
 import { Link } from 'react-router-dom';
-import CustomButton from '../../../components/Shared/customButton/index';
+import CustomButton from '../../../components/shared/customButton/index';
 import './billcords.css';
 
 
