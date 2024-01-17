@@ -1,9 +1,9 @@
 import React from "react";
 import './footer.css';
-const BLPFooter = () => {
+const Footer = () => {
     return (
         <div className="footer-container">BLPFooter</div>
     )
 }
 
-export default BLPFooter;
+export default Footer;

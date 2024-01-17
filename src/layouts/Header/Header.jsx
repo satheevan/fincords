@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-const BLPHeader = () => {
+const Header = () => {
     return (
         <>
             <div className="header-container">
@@ -11,4 +11,4 @@ const BLPHeader = () => {
         </>
     )
 }
-export default BLPHeader
+export default Header
