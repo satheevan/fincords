@@ -17,27 +17,29 @@ const btnUsersLogHandler=()=>{
     alert("admin log working on it")
 }
     return (
-        <div className='container billing-conntainer'>
-            <div className='col-sm-12 col-md-12 col-lg-4' >
-                <div className=''>
+        <div className='container-lg'>
+        
+            <div className='billing-conntainer-header row' >
+                <div className='fincods-logo d-flex justify-content-center col-md-4'>
                     <img src={require("../../../asset/images/fincords.png")} alt='fincord-logo' />
                 </div>
-                <div>
-                    <input type='search' name='search' />
+                <div className='col-md-8'>
+                    <input type='search' className='mt-4' name='search' size={50}/>
+                    {/* <div style={{height:"500px"}}></div> */}
                 </div>
             </div>
-            <div className='col-lg-8'>
-                <div className='container company-name'>
+            <div className='billing-conntainer-article row'>
+                <div className='compay-name col-12 mt-3'>
                     <h4>Alobin Technologies</h4>
                 </div>
-                <div className='company-nature-busines'>
+                <div className='company-nature-busines col-12'>
                     <h1>Billing Recordings</h1>
                 </div>
-                <div className='btn-billing mt-2 p-3' >
-                    <CustomButton classNameBtn={"custon-billing-btn p-3 px-4"} title={"Billing"} onClickHandler={btnBillingHandler}/>
+                <div className='btn-billing col-12' >
+                    <CustomButton classNameBtn={"custon-billing-btn mt-2 px-4"} title={"Billing"} onClickHandler={btnBillingHandler}/>
                 </div>
-                <div className='billing-voucher-card-container'>
-                    <CustomCard className={"billing-voucher-card"}>
+                <div className='billing-voucher-card-container col-md-4 col-lg-3 mt-3'>
+                    <CustomCard className={"billing-voucher-card row-col-auto"}>
                         <h5 className='mx-2'>Total Voucher</h5>
                         <div className='voucher-count d-flex mx-3'>
                         <div className='admin-logs-container mx-2'>
@@ -52,8 +54,8 @@ const btnUsersLogHandler=()=>{
                         </div>
                     </CustomCard>
                 </div>
-                <div className='billing-voucher-card-container'>
-                    <CustomCard className={"billing-voucher-card"}>
+                <div className='billing-voucher-card-container col-md-4 col-lg-3 mt-3 mb-2'>
+                    <CustomCard className={"billing-voucher-card row-col-auto"}>
                         <h5 className='mx-2'>Value</h5>
                         <div className='voucher-count d-flex mx-3'>
                         <div className='admin-logs-container mx-2'>
@@ -68,6 +70,7 @@ const btnUsersLogHandler=()=>{
                         </div>
                     </CustomCard>
                 </div>
+                <div className='col-lg-6'></div>
             </div>
 
 

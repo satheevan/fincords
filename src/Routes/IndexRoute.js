@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import PrivateRoutes from "./PrivateRoutes.js";
-import Routing from "./Route.js";
+import {Routing} from "./Routing.js";
 //bfore Login
 
 //--After Login
@@ -14,6 +14,8 @@ import InventoryManagement from "../pages/Home/Inventory/index.js";
 
 
 const RouterComponent = () => {
+
+    const routebilling = Routing.path.routeBilling;
     let authentication = { 'token': Routing.authentication.status };
 
     return (
@@ -22,8 +24,9 @@ const RouterComponent = () => {
             <Routes>
                 <Route path="/" element={<PrivateRoutes />}>
                     <Route index path='/' element={<Home />} />
-                    <Route path={Routing.path.Billcords} element={<Billcords />} />
-                    <Route path='/inventory' element={<InventoryManagement />} />
+                    <Route path={routebilling.billCords} element={<Billcords />} />
+                    <Route path={routebilling.billNew} element={<Billcords />} />
+                    <Route path={Routing.path.Inventory} element={<InventoryManagement />} />
                     <Route path="/*" element={<Navigate to={"/"} />} />
                 </Route>
                 <Route
