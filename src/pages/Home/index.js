@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {Routing} from "../../routes/Routing";
 import './home.css'
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 //data from JS
 // import { sourceData } from "../../utils/dynamicdata/sourceData";
@@ -15,23 +15,26 @@ const Home = () => {
 const routeBilling = Routing.path.routeBilling
 
 //useState 
-const[count, setCount]=useState(0)
-
-const countClickHandler =()=>{
+const[count, setCount]=useState(0);
+const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+// add EventListner when component mount
+useEffect(()=>{
+    window.addEventListener('resize',handleResize);
     
-    setCount(prev=>prev +1)
-    setTimeout(() => {
-        setCount(prev=>prev +2)
-    },2000);
-    setTimeout(() => {
-        setCount(prev=>prev +3)
-    },1000);
-    setCount(prev=>prev +4)
+    // clean up eventLlistner 
+    return ()=>{
+        window.removeEventListener('resize',handleResize);
+    };
+},[]);
 
-}
 
 //Methods
-
+const countClickHandler =()=>{
+    setCount((prev)=>prev+1);
+};
+const handleResize=()=>{
+    setWindowWidth(window.innerWidth)
+}
 return (
         <>
         <nav className="">
@@ -44,9 +47,9 @@ return (
             <nav>
                 
             </nav>
+            <div>window size : {windowWidth}</div>
             <div className="icons-container"><Link to={routeBilling.billCords}><img src={require('../../asset/images/billcords.png')} alt="billcodslogo" /></Link><span>Billcords</span></div>
             <div className="icons-container"><Link to={'./report'}>Report</Link><span>Summary Report</span></div>
-
         </>
     )
 }

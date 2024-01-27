@@ -4,9 +4,6 @@ import { Routing } from '../../routes/Routing';
 
 const routeBilling = Routing.path.routeBilling
 
-const navMenus={
-    
-}
 
 const billingNavs = [
     { id: 1, title: "New Billing", alais: "Pos or Billing Entry", path: `${routeBilling.billNew}` },

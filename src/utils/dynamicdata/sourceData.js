@@ -1,8 +1,13 @@
+import {basicItems} from './basic'
 import {billcordsDetails} from '../productAndServices/billcords'
 
-export const sourceData ={
-        
-    billcord:billcordsDetails,
 
+
+
+
+
+export const sourceData ={
+    basicItems,
+    billcord:billcordsDetails,
 }
 

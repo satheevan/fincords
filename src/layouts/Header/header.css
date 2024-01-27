@@ -10,5 +10,5 @@
 
 .header-container {
     background-color: var(--bgcolor-secondary);
-    height: 50px;
+    max-height: 50px;
 }

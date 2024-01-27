@@ -4,7 +4,12 @@ export const Routing = {
     },
     path: {
         routeHome: {
-            home: '/home',
+            home:"/home",
+            service:"/service",
+            team:"/team",
+            download:'/download',
+            contact:"/contact-us",
+            help:"/help"
         },
         routeBilling: {
             billCords: '/billcords',
