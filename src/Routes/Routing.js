@@ -20,6 +20,15 @@ export const Routing = {
         },
         routeInventory: {
             inventory: '/inventory',
+        },
+        routeFinancialAnalysis:{
+            finacialAnalysis:'/financial-analysis'
+        },
+        routeCustomerRelationshipManagment:{
+            CustomerRelationshipManagment:'/customer-relationship-management'
+        },
+        routeReport:{
+            report:'/report'
         }
     }
 

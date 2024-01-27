@@ -12,7 +12,7 @@ import { useState,useEffect } from "react";
 const Home = () => {
 // Routing
 // const routeHome = Routing.path.routeHome
-const routeBilling = Routing.path.routeBilling
+const routing = Routing
 
 //useState 
 const[count, setCount]=useState(0);
@@ -48,8 +48,8 @@ return (
                 
             </nav>
             <div>window size : {windowWidth}</div>
-            <div className="icons-container"><Link to={routeBilling.billCords}><img src={require('../../asset/images/billcords.png')} alt="billcodslogo" /></Link><span>Billcords</span></div>
-            <div className="icons-container"><Link to={'./report'}>Report</Link><span>Summary Report</span></div>
+            <div className="icons-container"><Link to={routing.path.billCords}><img src={require('../../asset/images/billcords.png')} alt="billcodslogo" /></Link><span>Billcords</span></div>
+            <div className="icons-container"><Link to={routing.}>Report</Link><span>Summary Report</span></div>
         </>
     )
 }

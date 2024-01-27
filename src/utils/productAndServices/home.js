@@ -2,12 +2,12 @@ import { Routing } from '../../routes/Routing';
 
 
 
-const routeBilling = Routing.path.home
+const routing = Routing.path
 
 
 const billingNavs = [
-    { id: 1, title: "New Billing", alais: "Pos or Billing Entry", path: `${routeBilling.billNew}` },
-    {id: 2,title: "Draft",alais: "Draft Billing Entry",path: `${routeBilling.billDraft}`},
-    {id: 3,title: "Entry Book",alais: " Accounting Transaction",path: `${routeBilling.entryBook}`},
-    {id: 4,title: "Report",alais: "Billing Report",path: `${routeBilling.billReport}`}
+    { id: 1, title: "Billcords", alais: "Pos or Billing Entry", path: `${routing.routeBilling.billCords}` },
+    {id: 2,title: "Iventory",alais: "Invntory Management System",path: `${routing.routeInventory.inventory}`},
+    {id: 3,title: "FinancialAnalysis",alais: "Financial management system",path: `${routing.routeCRM.customerRelationshipManagment}`},
+    {id: 4,title: "CRM",alais: "CustomerRelationshipManagment",path: `${routing.routeCRM.customerRelationshipManagment}`}
 ]
