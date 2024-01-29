@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Routing} from "../../routes/Routing";
 import './home.css'
 import { useState,useEffect } from "react";
 
 //data from JS
+// import {Routing} from "../../routes/Routing";
+import { sourceData } from "../../utils/dynamicdata/sourceData";
 // import { sourceData } from "../../utils/dynamicdata/sourceData";
 
 
@@ -12,7 +13,9 @@ import { useState,useEffect } from "react";
 const Home = () => {
 // Routing
 // const routeHome = Routing.path.routeHome
-const routing = Routing
+// const routing = Routing || alert("products data not  getting from home of source data")
+
+const productsList = sourceData.home || alert(()=>"products data not  getting from home of source data")
 
 //useState 
 const[count, setCount]=useState(0);
@@ -48,8 +51,14 @@ return (
                 
             </nav>
             <div>window size : {windowWidth}</div>
-            <div className="icons-container"><Link to={routing.path.billCords}><img src={require('../../asset/images/billcords.png')} alt="billcodslogo" /></Link><span>Billcords</span></div>
-            <div className="icons-container"><Link to={routing.}>Report</Link><span>Summary Report</span></div>
+            <div className="products-container">
+                {productsList.products.map((product,indx)=>(
+                    <Link to={product.path}>
+                    <span>{product.title}</span>
+                    </Link>
+                ))}
+                    {/* <img src={require('../../asset/icons/inventory.svg').default} alt="billcodslogo" /> */}
+                    </div>
         </>
     )
 }

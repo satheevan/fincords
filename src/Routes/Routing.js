@@ -22,10 +22,10 @@ export const Routing = {
             inventory: '/inventory',
         },
         routeFinancialAnalysis:{
-            finacialAnalysis:'/financial-analysis'
+            finacialAnalysis:'/financial-analysis',
         },
-        routeCustomerRelationshipManagment:{
-            CustomerRelationshipManagment:'/customer-relationship-management'
+        routeCRM:{
+            customerRelationshipManagment:'/customer-relationship-management',
         },
         routeReport:{
             report:'/report'
