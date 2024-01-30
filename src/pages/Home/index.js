@@ -39,7 +39,7 @@ const handleResize=()=>{
     setWindowWidth(window.innerWidth)
 }
 return (
-        <>
+        <div className="container">
         <nav className="">
             <button onClick={countClickHandler} className="bg-primary px-4 py-2">click to count</button><span className="px-2">count is:{count}</span>
         </nav>
@@ -51,15 +51,18 @@ return (
                 
             </nav>
             <div>window size : {windowWidth}</div>
-            <div className="products-container">
+            <div className="products-list-container d-flex gap-1">
                 {productsList.products.map((product,indx)=>(
-                    <Link to={product.path}>
+                   <div key={indx} className="each-product">
+                   <Link className="" to={product.path}>
                     <span>{product.title}</span>
                     </Link>
+                    </div>
+
                 ))}
                     {/* <img src={require('../../asset/icons/inventory.svg').default} alt="billcodslogo" /> */}
                     </div>
-        </>
+        </div>
     )
 }
 

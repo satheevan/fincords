@@ -24,7 +24,7 @@ const btnUsersLogHandler=()=>{
                     <img src={require("../../../asset/images/fincords.png")} alt='fincord-logo' />
                 </div>
                 <div className='col-md-8'>
-                    <input type='search' className='mt-4' name='search' size={50}/>
+                    <input type='search' className='fincord-search mt-4' name='search' size={50}/>
                     {/* <div style={{height:"500px"}}></div> */}
                 </div>
             </div>
