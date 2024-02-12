@@ -11,6 +11,7 @@ import Home from '../pages/Home/index.js'
 import Billcords from "../pages/Home/Billcords/index.jsx"
 // Inventory
 import InventoryManagement from "../pages/Home/Inventory/index.js";
+import FinancialAnalysis from "../pages/Home/FinancialAnalysis/index.js";
 // import Login from "../pages/BLP/Login/Login.jsx";
 
 
@@ -30,6 +31,8 @@ const RouterComponent = () => {
                     <Route path={routebilling.billNew} element={<Billcords />} />
                     {/* Inventory */}
                     <Route path={Routing.path.routeInventory.inventory} element={<InventoryManagement />} />
+                    {/* Financial Analysis */}
+                    <Route path={Routing.path.routeFinancialAnalysis.finacialAnalysis} element ={<FinancialAnalysis/>}/>
                     <Route path="/*" element={<Navigate to={"/"} />} />
                 </Route>
                 {/* Other full pages */}

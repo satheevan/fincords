@@ -19,7 +19,7 @@ const basicFontAndColors ={
 }
 const header ={
     keyAndPhrase:{
-        headingContent:"Fincords",
+        headingContent:"sample",
     }
 }
 const navBar={

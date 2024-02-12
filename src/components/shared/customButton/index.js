@@ -4,7 +4,7 @@ import './button.css'
 const CustomButton=({title,classNameBtn,onClickHandler,...props}) =>{
   return (
     <div className={props.containerClassName || ""}>
-    <button type='button' className={`button ${classNameBtn || ""}`} onClick={onClickHandler}>{title || ""}</button>
+    <button type={`${props.submit}||'button'`} className={`button ${classNameBtn || ""}`} onClick={onClickHandler}>{title || ""}</button>
     </div>
   )
 }
