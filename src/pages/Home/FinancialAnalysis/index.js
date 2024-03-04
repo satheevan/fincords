@@ -1,60 +1,35 @@
 import React, { useState } from "react";
 import "./financialanalysis.css"
-const secretNumbber = Math.floor(Math.random() * 10) + 1;
-let count = 0;
-let result = "";
-function GameGuessNumber() {
-    const [guessValue, setGuessValue] = useState("")
 
-    const gameValueHandler = (e) => {
-        const value = e.target.value;
-        setGuessValue((value))
-    }
-    
-    return (
-        <div className="game-container container ">
-            <div className="card">
-                <div className="card-header">
-                    <label>Guess the number 1 to 10</label></div>
-                <div className="card-body">
+import GameGuessNumber from './games'
 
-                    <input type="number" id="guess" name="guess" onChange={gameValueHandler} value={guessValue}></input>
-                </div>
-                <div className="card-footer">
-                    {Result()}
-                </div>
-            </div>
-        </div>
-    )
-}
-function Result() {
-    return (
-        <>
-            <div>
-                You Gussed {result}
-            </div>
-        </>
-    )
-}
+import OrderDeliveryCostOptimization from "./OrderAndDelivery";
 
+//Main component
 const FinancialAnalysis = () => {
 
     const [gameClick, setGameClick] = useState({ name: "Game start", toggle: false })
     const gameBtnHandler = () => {
-        let toggleStatus = gameClick.toggle
-        if (toggleStatus) {
-            toggleStatus = false;
+
+        //  let messageToggle ="" 
+        if (gameClick.toggle) {
+            setGameClick({ ...gameClick, toggle: false, name: "Game Start" })
         } else {
-            toggleStatus = true;
+            setGameClick({ ...gameClick, toggle: true, name: "Game End" })
         }
-        // setGameClick({ name: (toggleStatus) ? "Game End" : "Game start", toggle:toggleStatus})
-        // console.log("ToggleStatus", toggleStatus);
+        console.log("working");
     }
     return (
         <>
             <h1>Financial Analysis</h1>
-            <button type="button" onClick={gameBtnHandler}>{gameClick.name}</button>
-            {(gameClick.toggle) || GameGuessNumber()}
+            <div className="games-container container">
+                <button type="submit" onClick={gameBtnHandler}>{gameClick.name}</button>
+                <span> Just Normal game</span>
+                {(gameClick.toggle) && <GameGuessNumber gameClick={gameClick.toggle} />}
+            </div>
+            <div>
+                <OrderDeliveryCostOptimization/>
+            </div>
         </>
     )
 }

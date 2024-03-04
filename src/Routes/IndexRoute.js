@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import PrivateRoutes from "./PrivateRoutes.js";
 import {Routing} from "./Routing.js";
 //--Before Login
-import Login from "../pages/Login/index.js";
+import Login from "../pages/Guest/index.js";
 
 //--After Login
 import Home from '../pages/Home/index.js'

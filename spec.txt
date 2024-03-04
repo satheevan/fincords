@@ -1,0 +1,12 @@
+This is Billing App 
+Generating the Invoice
+Maintain the invoice bill
+Update the invoice bill
+Cancel the Invoice bill
+Creating the Draft Invoice
+Update the Draft Invoice
+Delete the draft Invoice         
+dialy - gpay 
+
+restaurant
+ 

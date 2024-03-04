@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import CustomButton from '../../../components/shared/customButton/index';
 import './inventory.css';
 import NewInventoryForms from '../../../components/Ui/Forms/Inventory/NewInventoryForms';
+import NewInventory from './NewInventoryForms';
 
 
 
@@ -14,7 +15,7 @@ const InventoryManagement = () => {
     const [msg, setMsg] = useState('Count is =>zero')
 
     useEffect(() => {
-        console.log('hook for counter, ', count)
+        console.log('UseEffect :1 hook for counter, ', count)
         if (count > 0) {
             setMsg(`Count is ${count}`)
             console.log('condition true Messge changed :',msg)
@@ -25,18 +26,19 @@ const InventoryManagement = () => {
     }, [count])
 
     useEffect(()=>{
-        console.log("Initial Screen render");
+        console.log("UseEffect :2 Initial Screen render");
         setCount(1)
         console.log("Initial count change inside useEffect to 1 checking ",count);
     },[])
+    
     console.log("Initial count changes Outside useEffect to 1 checking ",count);
 
     useEffect(() => {
-        console.log('message state changed useEffect:', msg)
+        console.log(' UseEffect :3 message state changed useEffect:', msg)
     }, [msg])
 
     useEffect(() => {
-        console.log('initialized')
+        console.log('UseEffect :4 initialized')
     })
 
 
@@ -64,6 +66,9 @@ const InventoryManagement = () => {
             </nav>
             <div>
                 <NewInventoryForms/>
+            </div>
+            <div>
+                <NewInventory/>
             </div>
         </div >
     )
