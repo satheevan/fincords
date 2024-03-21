@@ -4,15 +4,19 @@ export const Routing = {
     },
     path: {
         routeHome: {
-            home:"/home",
-            service:"/service",
-            team:"/team",
-            download:'/download',
-            contact:"/contact-us",
-            help:"/help"
+            home: "/home",
+            service: "/service",
+            team: "/team",
+            download: '/download',
+            contact: "/contact-us",
+            help: "/help"
         },
         routeBilling: {
             billCords: '/billcords',
+            services: {
+                restaurantServices: "/restaurant-service",
+
+            },
             billReport: '/bill-report',
             entryBook: '/entry-book',/*Log book/Day Book*/
             billDraft: '/bill-draft',
@@ -21,14 +25,14 @@ export const Routing = {
         routeInventory: {
             inventory: '/inventory',
         },
-        routeFinancialAnalysis:{
-            finacialAnalysis:'/financial-analysis',
+        routeFinancialAnalysis: {
+            finacialAnalysis: '/financial-analysis',
         },
-        routeCRM:{
-            customerRelationshipManagment:'/customer-relationship-management',
+        routeCRM: {
+            customerRelationshipManagment: '/customer-relationship-management',
         },
-        routeReport:{
-            report:'/report'
+        routeReport: {
+            report: '/report'
         }
     }
 
