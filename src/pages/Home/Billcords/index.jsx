@@ -1,14 +1,21 @@
 import React from 'react';
 import './billcords.css';
+// import { useNavigate,useLocation } from 'react-router';
 import CustomButton from '../../../components/shared/customButton';
 import { CustomCard } from '../../../components/shared/customCard';
+import { Link } from 'react-router-dom';
+import { Routing } from '../../../Routes/Routing';
 
 
 const Billcords = () => {
+    const restaurantBusiness = Routing.path.routeBilling.services.restaurantServices
 
+    // const navigate = useNavigate
     // method
     const btnBillingHandler = () => {
         alert("billing working on it")
+        // navigate()
+
     }
     const btnAdminLogHandler = () => {
         alert("admin log working on it")
@@ -35,6 +42,11 @@ const Billcords = () => {
                 <div className='company-nature-busines col-12'>
                     <h1>Billing Recordings</h1>
                 </div>
+                <div>
+                    <h4>Business Name</h4>
+                    &nbsp;<Link className='' to={restaurantBusiness}><h5>Restaurant Business</h5></Link>
+                </div>
+
                 <div className='btn-billing col-12' >
                     <CustomButton classNameBtn={"custon-billing-btn mt-2 px-4"} title={"Billing"} onClickHandler={btnBillingHandler} />
                 </div>

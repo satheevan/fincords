@@ -27,7 +27,7 @@ const productData = {
 }
 
 
-const formClassName ={
+const formClassName = {
     ClassContainer: "row",
     ClassLabel: "col-sm",
     ClassInput: "col-sm",
@@ -45,22 +45,22 @@ const inventoryProductFields = [
             customClassLabel: "",
             customClassInput: "",
         },
-        classes :formClassName
-        
+        classes: formClassName
+
     },
     {
         label: "Product Name",
         type: "text",
         name: "code",
-        validationProps:{
-                require
+        validationProps: {
+            require
         },
         classCustom: {
             customClassContainer: "",
             customClassLabel: "",
             customClassInput: "",
         },
-        classes :formClassName
+        classes: formClassName
     },
     {
         label: "Product Price",
@@ -71,7 +71,7 @@ const inventoryProductFields = [
             customClassLabel: "",
             customClassInput: "",
         },
-        classes :formClassName
+        classes: formClassName
 
     },
 ]
