@@ -4,7 +4,7 @@ import './billcords.css';
 import CustomButton from '../../../components/shared/customButton';
 import { CustomCard } from '../../../components/shared/customCard';
 import { Link } from 'react-router-dom';
-import { Routing } from '../../../Routes/Routing';
+import { Routing } from '../../../routes/Routing';
 
 
 const Billcords = () => {

@@ -4,7 +4,7 @@ import "./header.css";
 // data
 import { sourceData } from "../../utils/dynamicdata/sourceData";
 // import CustomButton from "../../components/shared/customButton";
-import NavBar from "../navbar/index.js";
+import NavBar from "../Navbar/index";
 
 
 const Header = () => {
