@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import PrivateRoutes from "./PrivateRoutes.js";
 import { Routing } from "./Routing.js";
+// styles 
+import "../utils/styles/flex.css";
 //--Before Login
 import Login from "../pages/Guest/index.js";
 
