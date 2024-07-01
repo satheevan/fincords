@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {Provide} from 'react-redux';
-import {store} from './app/store.js';
+// import {Provide} from 'react-redux';
+// import {store} from './app/store.js';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
 // import App from './App';
@@ -10,9 +10,9 @@ import RouterComponent from './routes/IndexRoute';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Provide store={store}>
+    // <Provide store={store}>
         <RouterComponent />
-    </Provide>
+    // </Provide>
 );
 
 // If you want to start measuring performance in your app, pass a function

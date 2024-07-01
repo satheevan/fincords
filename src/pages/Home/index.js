@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./home.css";
 import { useState, useEffect } from "react";
 
@@ -77,7 +77,7 @@ const Home = () => {
               {
                 productsList.menuItems.map((menu,index)=>{
                     return(
-                        <CustomCard className={"dashboard-cards"}>
+                        <CustomCard key={index} className={"dashboard-cards"}>
                 <div className="f-col card-container">
                   <div className="icon-card-content">{menu.icon}</div>
                   <label className="label-card-content">{menu.labelName}</label>

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import PrivateRoutes from "./PrivateRoutes.js";
 import { Routing } from "./Routing.js";
-// styles 
+// styles -utilities
 import "../utils/styles/flex.css";
 //--Before Login
 import Login from "../pages/Guest/index.js";
@@ -12,6 +12,7 @@ import Home from '../pages/Home/index.js'
 // Billcords
 import Billcords from "../pages/Home/Billcords/index.jsx"
 import RestaurantServices from "../pages/Home/Billcords/RestaurantServices/index.js";
+import LegalServices from "../pages/Home/Billcords/LegalServices/index.js"
 // Inventory
 import InventoryManagement from "../pages/Home/Inventory/index.js";
 // Financial
@@ -33,6 +34,7 @@ const RouterComponent = () => {
                     {/* Billing */}
                     <Route path={routebilling.billCords} element={<Billcords />} />
                     <Route path={routebilling.services.restaurantServices} element={<RestaurantServices />} />
+                    <Route path={routebilling.services.legalServices} element={<LegalServices/>}/>
                     {/* Inventory */}
                     <Route path={Routing.path.routeInventory.inventory} element={<InventoryManagement />} />
                     {/* Financial Analysis */}

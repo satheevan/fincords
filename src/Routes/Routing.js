@@ -15,6 +15,7 @@ export const Routing = {
             billCords: '/billcords',
             services: {
                 restaurantServices: "/restaurant-service",
+                legalServices:"/legal-service"
 
             },
             billReport: '/bill-report',

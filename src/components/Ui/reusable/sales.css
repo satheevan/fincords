@@ -1,15 +1,8 @@
-.table-container {
-    display: inline-block;
+
+.table-view{
+    overflow-x: scroll;
 }
 
-.col,
-.colvalue {
-    width: 100%;
-    padding: 2px;
-    margin: 2px;
-    text-align: center;
-}
-
-.colvalue {
-    border-bottom: 1px solid black;
+thead,tbody >*{
+    width: fit-content;
 }

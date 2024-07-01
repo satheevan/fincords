@@ -1,5 +1,6 @@
 // import exp from "constants";
 import React, { useEffect, useState } from "react";
+import authURL from "../../../../app/client";
 // import { Routes, Route } from 'react-router';
 // import Routing from '../../../../Routes/Routing;'
 
@@ -99,6 +100,12 @@ const RestaurantServices = () => {
   const categoryHandler = () =>{
     alert("working cart")
   }  
+
+  useEffect( async ()=>{
+    const comments = await authURL.get("comments")
+    console.log("auth", comments);
+},[])
+
   return (
     <>
       <div className="restaurant-wrapper container">

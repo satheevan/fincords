@@ -27,11 +27,11 @@ const productData = {
 }
 
 
-const formClassName = {
-    ClassContainer: "row",
-    ClassLabel: "col-sm",
-    ClassInput: "col-sm",
-}
+// const formClassName = {
+//     ClassContainer: "row",
+//     ClassLabel: "col-sm",
+//     ClassInput: "col-sm",
+// }
 
 
 
@@ -45,8 +45,6 @@ const inventoryProductFields = [
             customClassLabel: "",
             customClassInput: "",
         },
-        classes: formClassName
-
     },
     {
         label: "Product Name",
@@ -60,7 +58,6 @@ const inventoryProductFields = [
             customClassLabel: "",
             customClassInput: "",
         },
-        classes: formClassName
     },
     {
         label: "Product Price",
@@ -71,8 +68,6 @@ const inventoryProductFields = [
             customClassLabel: "",
             customClassInput: "",
         },
-        classes: formClassName
-
     },
 ]
 

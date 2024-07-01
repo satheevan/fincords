@@ -8,7 +8,7 @@ import { Routing } from '../../../routes/Routing';
 
 
 const Billcords = () => {
-    const restaurantBusiness = Routing.path.routeBilling.services.restaurantServices
+    const businessName = Routing.path.routeBilling.services
 
     // const navigate = useNavigate
     // method
@@ -44,7 +44,15 @@ const Billcords = () => {
                 </div>
                 <div>
                     <h4>Business Name</h4>
-                    &nbsp;<Link className='' to={restaurantBusiness}><h5>Restaurant Business</h5></Link>
+                    <ul>
+                        <li>
+                    <Link className='' to={businessName.restaurantServices}><h5>Restaurant Business</h5></Link>
+                        </li>
+                        <li>
+                    <Link className='' to={businessName.legalServices}><h5>Legal Service Business</h5></Link>
+                        </li>
+
+                    </ul>
                 </div>
 
                 <div className='btn-billing col-12' >

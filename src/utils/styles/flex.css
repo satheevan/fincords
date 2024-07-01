@@ -43,6 +43,9 @@
 .f-wrap {
     flex-wrap: wrap;
 }
+.f-grow{
+    flex-grow:1;
+}
 .f-gap-1 {
     gap: 1rem;
 }
