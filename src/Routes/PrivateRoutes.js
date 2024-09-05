@@ -18,7 +18,11 @@ const PrivateRoutes = () => {
         </>)
         :
         (<>
-            <Navigate to={'/login'} />
+            <Navigate to={Routing.path.guest.login} />
+            <Navigate to={Routing.path.guest.register} />
+            <Navigate to={Routing.path.guest.guest} />
+            <Navigate to={Routing.path.guest.invoiceGen}/>
+            <Navigate to={Routing.path.guest.invoiceDetails}/>
         </>)
 };
 

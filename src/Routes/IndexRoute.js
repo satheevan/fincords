@@ -5,7 +5,11 @@ import { Routing } from "./Routing.js";
 // styles -utilities
 import "../utils/styles/flex.css";
 //--Before Login
-import Login from "../pages/Guest/index.js";
+import GuestPage from '../pages/Guest/index.js'
+import Login from "../pages/Guest/Login/index.js";
+import Register from "../pages/Guest/Register/register.js";
+import GoodsInvoice from "../components/Ui/InvoiceCreator/GoodsInvoice.js";
+import InvoiceTemp1 from "../components/Ui/InvoiceCreator/print/template1.js";
 
 //--After Login
 import Home from '../pages/Home/index.js'
@@ -17,7 +21,8 @@ import LegalServices from "../pages/Home/Billcords/LegalServices/index.js"
 import InventoryManagement from "../pages/Home/Inventory/index.js";
 // Financial
 import FinancialAnalysis from "../pages/Home/FinancialAnalysis/index.js";
-// import Login from "../pages/BLP/Login/Login.jsx";
+import InvoiceDetails from "../components/Ui/InvoiceCreator/InvoiceDetails.js";
+import PrintInvoice from "../components/Ui/InvoiceCreator/print/PrintInvoices.js";
 
 
 const RouterComponent = () => {
@@ -42,11 +47,16 @@ const RouterComponent = () => {
                     <Route path="/*" element={<Navigate to={"/"} />} />
                 </Route>
                 {/* Other full pages */}
-
-                <Route
-                    path="/login"
-                    element={authentication.token ? <Navigate to={'/'} /> : <Login />}
-                ></Route>
+                <Route>
+                <Route path={Routing.path.guest.guest} element={authentication.token ? <Navigate to={'/'} /> : <GuestPage/>}/>
+                <Route path={Routing.path.guest.login} element={authentication.token ? <Navigate to={'/'} /> : <Login />}/>
+                <Route path={Routing.path.guest.register} element={authentication.token ? <Navigate to={'/'} /> : <Register />}/>
+                <Route path={Routing.path.guest.invoiceGen} element={authentication.token ? <Navigate to={'/'} />:<GoodsInvoice/>}/>
+                <Route path={Routing.path.guest.invoiceDetails} element={authentication.token ? <Navigate to={'/'} />:<InvoiceDetails/>}/>
+                <Route path={Routing.path.guest.InvoiceTemp} element={authentication.token? <Navigate to={'/'}/>:<InvoiceTemp1/>}/>
+                <Route path={Routing.path.guest.printInvoice} element={authentication.token? <Navigate to={'/'}/>:<PrintInvoice/>}/>
+                </Route>
+                
 
             </Routes>
         </BrowserRouter >

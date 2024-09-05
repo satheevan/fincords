@@ -55,7 +55,7 @@ const Home = () => {
                   <li className="row">
                     <a className="" href={product.path}>
                       <span>{product.id}</span>
-                      <strong>{product.title}</strong>
+                      <strong className="product-title navHide">{product.title}</strong>
                     </a>
                   </li>
                 );
@@ -63,16 +63,16 @@ const Home = () => {
             </ul>
           </nav>
         </aside>
-        <main className="f-col w-bal">
+        <main className="f-col w-bal f-grow">
           <div>
             <input type="search" size={24} placeholder="Search"></input>
           </div>
           <div className="f-col">
-            <div className="f-row f-justify-btwn m-top-1">
+            <div className="f-row f-j-b m-top-1">
               <strong>DashBoard</strong>
               <input type="date" />
             </div>
-            <div className="f-row f-gap-1 f-wrap">
+            <div className="f-row f-j-c col-sm-12 f-gap-1 f-wrap">
               
               {
                 productsList.menuItems.map((menu,index)=>{

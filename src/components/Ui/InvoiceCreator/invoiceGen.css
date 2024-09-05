@@ -1,0 +1,75 @@
+.content-label {
+  /* background-color: yellow; */
+  max-height: 30px;
+  max-width: 120px;
+  overflow: auto;
+  margin: 2px 0 0 0;
+}
+.table-items {
+  width: 100%;
+}
+.th-content {
+  /* color: blue; */
+  border: none;
+  /* background-color: aqua; */
+  width: 100px;
+}
+.th-action {
+  width: 50px;
+  margin: 0 auto;
+}
+/* th .desc-full{
+    max-width: 100%;
+} */
+.th-content-lg {
+  flex-grow: 1;
+  width: 60%;
+}
+.no-br {
+  border: none;
+  margin-left: 2px;
+  padding-left: 2px;
+  border-bottom: 1px #828282 solid;
+}
+.no-br:active {
+  border: none;
+  border-bottom: 1px #828282 solid;
+}
+.bt-b {
+}
+
+/* Responsive */
+/* laptop */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  button {
+    width: max-content;
+  }
+  .head-content{
+    display: none;
+  }
+  .invoice-details{
+    display: block !important;
+  }
+}
+/* mobile */
+@media screen and (min-width: 50px) and (max-width: 425px) {
+  .main-container {
+    margin:0 auto !important;
+    width:350px;
+    /* background-color: red !important; */
+  }
+  .head-content{
+    display: none;
+  }
+  .table-container{
+    width: 315px;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius:8px;
+  }
+  .nav-menu {
+    display: none !important;
+  }
+  .inv-amt-details{
+  }
+}

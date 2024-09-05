@@ -2,11 +2,11 @@ import React from "react";
 import { Routing } from "../../../routes/Routing";
 import { Link } from "react-router-dom";
 
-function Login() {
+function Register() {
   return (
     <div className="container">
       <nav className="f-row f-j-b mt-1">
-        <h1>Fincords - Login Page</h1>
+        <h1>Fincords - Register Page</h1>
         <div className="">
           <ul className="f-row f-gap-1">
             <li>
@@ -23,11 +23,11 @@ function Login() {
         <div className="">
           <ul className="f-row f-gap-1">
             <li>
-              {/* <button className="btn btn-primary">Register</button> */}
+              
             </li>
             <li>
-              <Link to={Routing.path.guest.register} className="btn btn-primary">
-                Register
+              <Link to={Routing.path.guest.login} className="btn btn-primary">
+                Login
               </Link>
             </li>
           </ul>
@@ -37,4 +37,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;

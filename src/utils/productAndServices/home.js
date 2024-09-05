@@ -11,7 +11,8 @@ const products = [
     { id: 2, title: "Iventory", alais: "Invntory Management System", path: `${routing.routeInventory.inventory}`, icon:require('../../asset/icons/user.svg') },
     { id: 3, title: "FinancialAnalysis", alais: "Financial management system", path: `${routing.routeFinancialAnalysis.finacialAnalysis}`, icon:require('../../asset/icons/user.svg') },
     { id: 4, title: "CRM", alais: "customer relationship management", path: `${routing.routeCRM.customerRelationshipManagment}`, icon:require('../../asset/icons/user.svg') },
-    { id: 5, title: "Report", alais: "Report", path: `${routing.routeReport.report}` }
+    { id: 5, title: "Report", alais: "Report", path: `${routing.routeReport.report}` },
+    { id: 6, title: "Invoice", alais: "Invoice Genrator", path: `${routing.routeInvoice.goodsInvoice}` }
 ]
 
 const menuItems = [

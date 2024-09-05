@@ -1,0 +1,92 @@
+/* Template-1 */
+.t1-main-wrapper{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.t1-box1{
+    /* display: flex;
+    justify-content: start; */
+}
+.t1-box2{
+    display: flex;
+    justify-content: space-around;
+}
+.t1-box3{
+    display: flex;
+    justify-content: space-around;
+}
+.t1-box4{
+    display: flex;
+    justify-content: space-around;
+}
+.totalValue{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+@media print{
+    /* styles applied only when printing */
+    .print{
+        display:block;
+    }
+}
+
+/* Template-2 */
+.t2-main-wrapper{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.t2-box1{
+    display: flex;
+    justify-content: center;
+}
+.t2-box2{
+    display: flex;
+    justify-content: space-around;
+}
+.t2-box3{
+    display: flex;
+    justify-content: space-around;
+}
+.t2-box4{
+    display: flex;
+    justify-content: space-around;
+}
+.totalValue{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Template-2 */
+.t3-main-wrapper{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.t3-box1{
+    display: flex;
+    justify-content: end;
+}
+.t3-box2{
+    display: flex;
+    justify-content: space-between;
+}
+.t3-box3{
+    display: flex;
+    justify-content: space-around;
+}
+.t3-box4{
+    display: flex;
+    justify-content: space-between;
+}
+.totalValue{
+    display: flex;
+    flex-direction: column-reverse;
+}

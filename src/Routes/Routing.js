@@ -1,8 +1,23 @@
+import InvoiceTemp1 from "../components/Ui/InvoiceCreator/print/template1";
+
 export const Routing = {
     authentication: {
-        status: true,
+        status: false,
     },
     path: {
+        // before Login
+        guest:{
+            guest:"/fincord",
+            service:"/fincord/service",
+            about:"/fincord/about",
+            login:"/fincord/login",
+            register:"/fincord/register",
+            invoiceGen:"/fincord/invoice-gen",
+            invoiceDetails:"/fincord/invoice-details",
+            InvoiceTemp:"/fincord/template",
+            printInvoice:"/fincord/printInvoice"
+        },
+        // after Login
         routeHome: {
             home: "/home",
             service: "/service",
@@ -34,6 +49,10 @@ export const Routing = {
         },
         routeReport: {
             report: '/report'
+        },
+        routeInvoice:{
+            goodsInvoice:"fincord/invoiceGoods"
+
         }
     }
 

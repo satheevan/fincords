@@ -14,7 +14,7 @@ const Billcords = () => {
     // method
     const btnBillingHandler = () => {
         alert("billing working on it")
-        // navigate()
+        // navigate("./")
 
     }
     const btnAdminLogHandler = () => {
@@ -31,7 +31,7 @@ const Billcords = () => {
                     <img src={require("../../../asset/images/fincords.png")} alt='fincord-logo' />
                 </div>
                 <div className='col-md-8'>
-                    <input type='search' className='fincord-search mt-4' name='search' size={50} />
+                    <input type='search' className='fincord-search mt-4' name='search' style={{minWidth:"100%"}}/>
                     {/* <div style={{height:"500px"}}></div> */}
                 </div>
             </div>
@@ -59,32 +59,32 @@ const Billcords = () => {
                     <CustomButton classNameBtn={"custon-billing-btn mt-2 px-4"} title={"Billing"} onClickHandler={btnBillingHandler} />
                 </div>
                 <div className='billing-voucher-card-container col-md-4 col-lg-3 mt-3'>
-                    <CustomCard className={"billing-voucher-card row-col-auto"}>
+                    <CustomCard className={"billing-voucher-card row-col-auto p-1 py-2"}>
                         <h5 className='mx-2'>Total Voucher</h5>
                         <div className='voucher-count d-flex mx-3'>
                             <div className='admin-logs-container mx-2'>
-                                <span className='mx-3'>841</span>
-                                <CustomButton classNameBtn={"btn-admin-logs"} title={"Admin"} onClickHandler={btnAdminLogHandler} />
+                                <span className='mx-1'>841</span>
+                                <CustomButton classNameBtn={"btn-admin-logs p-1"} title={"Admin"} onClickHandler={btnAdminLogHandler} />
                             </div>
                             <div className='user-logs-container'>
-                                <span className='mx-3'>401</span>
-                                <CustomButton classNameBtn={"btn-users-logs"} title={"Users"} onClickHandler={btnUsersLogHandler} />
+                                <span className='mx-1'>401</span>
+                                <CustomButton classNameBtn={"btn-users-logs p-1"} title={"Users"} onClickHandler={btnUsersLogHandler} />
                             </div>
                             <div className='total-voucher-entered'>1223 bills</div>
                         </div>
                     </CustomCard>
                 </div>
                 <div className='billing-voucher-card-container col-md-4 col-lg-3 mt-3 mb-2'>
-                    <CustomCard className={"billing-voucher-card row-col-auto"}>
+                    <CustomCard className={"billing-voucher-card row-col-auto p-2"}>
                         <h5 className='mx-2'>Value</h5>
                         <div className='voucher-count d-flex mx-3'>
                             <div className='admin-logs-container mx-2'>
-                                <span className='mx-3'>7648</span>
-                                <CustomButton classNameBtn={"btn-admin-logs"} title={"Admin"} onClickHandler={btnAdminLogHandler} />
+                                <span className='mx-1'>7648</span>
+                                <CustomButton classNameBtn={"btn-admin-logs p-1"} title={"Admin"} onClickHandler={btnAdminLogHandler} />
                             </div>
                             <div className='user-logs-container'>
-                                <span className='mx-3'>4352</span>
-                                <CustomButton classNameBtn={"btn-users-logs"} title={"Users"} onClickHandler={btnUsersLogHandler} />
+                                <span className='mx-1'>4352</span>
+                                <CustomButton classNameBtn={"btn-users-logs p-1"} title={"Users"} onClickHandler={btnUsersLogHandler} />
                             </div>
                             <div className='total-value-entered'>$ 12000</div>
                         </div>
